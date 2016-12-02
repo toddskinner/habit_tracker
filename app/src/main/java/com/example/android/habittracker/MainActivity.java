@@ -36,11 +36,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayDatabaseInfo(){
-        // Create and/or open a database to read from it
-        SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        String[] projection = { HabitEntry._ID, HabitEntry.COLUMN_NAME, HabitEntry.COLUMN_CATEGORY, HabitEntry.COLUMN_TARGET, HabitEntry.COLUMN_DONE };
-        Cursor cursor = db.query(HabitEntry.TABLE_NAME, projection, null, null, null, null, null);
+        Cursor cursor = mDbHelper.readAllHabits();
 
         TextView displayView = (TextView) findViewById(R.id.text_view_habit);
 
