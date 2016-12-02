@@ -29,16 +29,13 @@ import static java.lang.Integer.parseInt;
  */
 
 public class AddHabitActivity extends AppCompatActivity {
-    /** EditText field to enter the pet's name */
+
     private EditText mNameEditText;
 
-    /** EditText field to enter the pet's gender */
     private Spinner mCategorySpinner;
 
-    /** EditText field to enter the pet's breed */
     private EditText mTargetPerWeekEditText;
 
-    /** EditText field to enter the pet's weight */
     private EditText mTimesDonePerWeekEditText;
 
     private HabitDbHelper mDbHelper;
@@ -48,7 +45,7 @@ public class AddHabitActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addHabit);
+        setContentView(R.layout.activity_add_habit);
 
         mNameEditText = (EditText) findViewById(R.id.edit_name);
         mCategorySpinner = (Spinner) findViewById(R.id.spinner_category);
@@ -121,9 +118,9 @@ public class AddHabitActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu options from the res/menu/menu_editor.xml file.
+        // Inflate the menu options.
         // This adds menu items to the app bar.
-        getMenuInflater().inflate(R.menu.menu_editor, menu);
+        getMenuInflater().inflate(R.menu.menu_add_habit, menu);
         return true;
     }
 
@@ -133,9 +130,7 @@ public class AddHabitActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
-                //save pet to database
                 insertHabit();
-                //exit activity
                 finish();
                 return true;
             // Respond to a click on the "Up" arrow button in the app bar

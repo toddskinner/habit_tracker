@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Habit Tracker</string>
+    <string name="editor_activity_title_new_habit">Add a New Habit</string>
+    <string name="action_save">Save</string>
+    <string name="hint_habit_name">Name/Description</string>
+    <string name="hint_target">Target per week</string>
+    <string name="hint_done">Times done this week</string>
+    <string name="category_name">Habit</string>
+    <string name="category_target_vs_done">Target vs. Done</string>
+    <string name="category_category">Category</string>
+    <string name="category_misc">Miscellaneous</string>
+    <string name="category_diet">Diet</string>
+    <string name="category_family">Family</string>
+    <string name="category_exercise">Exercise</string>
+    <string name="category_career">Career</string>
+    <string name="action_add_habit_data">Add Habit</string>
+    <string name="action_delete_all_entries">Delete All</string>
 </resources>
+

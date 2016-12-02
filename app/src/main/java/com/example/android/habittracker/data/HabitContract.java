@@ -12,8 +12,8 @@ public class HabitContract {
         public static final String _ID = BaseColumns._ID;
         public static final String COLUMN_NAME = "name";
         public static final String COLUMN_CATEGORY = "category";
-        public static final String COLUMN_TARGET = "target per week";
-        public static final String COLUMN_DONE = "done per week";
+        public static final String COLUMN_TARGET = "target";
+        public static final String COLUMN_DONE = "done";
 
         /**
          * Possible values for the category of the habit.
